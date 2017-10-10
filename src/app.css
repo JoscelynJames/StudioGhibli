@@ -1,0 +1,19 @@
+#main-container {
+	display: flex;
+	flex-flow: column;
+}
+#studio-ghibli-header, #select-movies, #select, #title {
+	display: flex;
+	justify-content: center;
+}
+#select-movies {
+
+}
+
+#select {
+
+}
+
+#title {
+
+}
