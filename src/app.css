@@ -5,9 +5,8 @@
 
 .movie-grid {
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between
+	flex-flow: row wrap;
+	justify-content: space-around;
 } 
 
 .movie-card {
@@ -15,11 +14,9 @@
 	width: 200px;
 }
 
-/* .row {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-} */
+.head-pic {
+	width: 100%;
+}
 
 li {
   list-style-type: none;

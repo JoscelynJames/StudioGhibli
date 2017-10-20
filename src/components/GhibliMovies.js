@@ -21,13 +21,9 @@ class GhibliMovies extends React.Component {
   render() {
     return (
       <div className="movie-container">
-				<div className="header">
-					<p>Movies</p>
-				</div>
-			<div className="row">
-				<MovieCard ghibliMovies={this.state.ghibliMovies} />	
-			</div>
-        
+        <div className="row">
+          <MovieCard ghibliMovies={this.state.ghibliMovies} />
+        </div>
       </div>
     );
   }
