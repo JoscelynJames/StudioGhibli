@@ -1,11 +1,15 @@
-import React from "react";
+import React from 'react';
+
+import Movie from './Movie'
 
 class MovieCard extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {};
-  }
+    this.state = {
+			movies: [],
+		};
+	}
 
   render() {
     var hasMovies = this.props.ghibliMovies;
@@ -19,7 +23,8 @@ class MovieCard extends React.Component {
             return (
               <div key={movie.id} className="movie-card">
                 <li>
-                  <h1>{movie.title}</h1>
+                  <h3>{movie.title}</h3>
+									<Movie movie={movie.title}/>
                 </li>
               </div>
             );

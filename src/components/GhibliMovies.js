@@ -22,7 +22,11 @@ class GhibliMovies extends React.Component {
     return (
       <div className="movie-container">
         <div className="row">
-          <MovieCard ghibliMovies={this.state.ghibliMovies} />
+					{this.state.ghibliMovies.length < 1 
+					? <h1>Loading</h1>
+					:<MovieCard ghibliMovies={this.state.ghibliMovies} />
+					}
+					
         </div>
       </div>
     );

@@ -10,16 +10,35 @@
 } 
 
 .movie-card {
-	height: 300px;
-	width: 200px;
+	height: 400px;
+	width: 300px;
+	display: flex;
+	/* border: 2px black solid; */
+	display: flex;
+	justify-content: center;
+	padding-bottom: 5px;
 }
 
 .head-pic {
 	width: 100%;
 }
 
+.poster {
+	height: 300px;
+	width: 200px;
+}
+
+.movie-info {
+
+}
+
+body {
+  font-family: Arial
+}
+
 li {
-  list-style-type: none;
+	list-style-type: none;
+	text-align: center
 }
 
 ul {
