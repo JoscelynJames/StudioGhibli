@@ -1,19 +1,30 @@
-#main-container {
-	display: flex;
-	flex-flow: column;
+.movie-container {
+	max-width: 12000px;
+	margin: 0 auto;
 }
-#studio-ghibli-header, #select-movies, #select, #title {
+
+.movie-grid {
 	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between
+} 
+
+.movie-card {
+	height: 300px;
+	width: 200px;
+}
+
+/* .row {
+	display: flex;
+	flex-flow: row wrap;
 	justify-content: center;
-}
-#select-movies {
+} */
 
-}
-
-#select {
-
+li {
+  list-style-type: none;
 }
 
-#title {
-
+ul {
+  padding: 0;
 }
