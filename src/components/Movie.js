@@ -2,7 +2,8 @@ import React from "react";
 import api from "../api/api";
 
 function MovieInfo(props) {
-  return <ul className="movie-info">
+  return (
+    <ul className="movie-info">
       <div>
         <li>
           <h5>Released</h5>
@@ -14,11 +15,14 @@ function MovieInfo(props) {
         </li>
         <li>
           <h5>Plot</h5>
-          <p>{props.movie.Runtime + "  "} {props.movie.Rated}</p>
+          <p>
+            {props.movie.Runtime + "  "} {props.movie.Rated}
+          </p>
           <p>{props.movie.Plot}</p>
         </li>
       </div>
-    </ul>;
+    </ul>
+  );
 }
 
 function MoviePoster(props) {
