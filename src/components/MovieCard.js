@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {Link} from "react-router-dom";
 import Movie from './Movie'
 
 class MovieCard extends React.Component {
@@ -20,14 +20,14 @@ class MovieCard extends React.Component {
           <p>Loading...</p>
         ) : (
           this.props.ghibliMovies.map(movie => {
-            return (
-              <div key={movie.id} className="movie-card">
+            return <div key={movie.id} className="movie-card">
+              <Link to={"/movie/=" + movie.title}> 
                 <li>
                   <h3>{movie.title}</h3>
-									<Movie movie={movie.title}/>
+                  <Movie movie={movie.title} />
                 </li>
-              </div>
-            );
+              </Link>
+            </div>;
           })
         )}
       </ul>

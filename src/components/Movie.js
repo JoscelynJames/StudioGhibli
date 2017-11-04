@@ -1,5 +1,6 @@
 import React from "react";
 import api from "../api/api";
+import MoviePoster from "./MoviePoster"
 
 function MovieInfo(props) {
   return <ul className="movie-info">
@@ -21,16 +22,6 @@ function MovieInfo(props) {
     </ul>;
 }
 
-function MoviePoster(props) {
-  return (
-    <img
-      className="poster"
-      src={props.movie.Poster}
-      alt={props.movie.movieTitle}
-    />
-  );
-}
-
 class Movie extends React.Component {
   constructor(props) {
     super(props);
@@ -47,7 +38,6 @@ class Movie extends React.Component {
 
   makeOmbdMovieCall(title) {
     api.fetchAllOmdbMovieInfo(title).then(movie => {
-      console.log(movie);
       this.setState({ movie });
     });
   }

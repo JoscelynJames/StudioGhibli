@@ -13,7 +13,6 @@
 	height: 400px;
 	width: 300px;
 	display: flex;
-	/* border: 2px black solid; */
 	display: flex;
 	justify-content: center;
 	padding-bottom: 5px;
@@ -28,8 +27,35 @@
 	width: 200px;
 }
 
-.movie-info {
+.title {
+	font-size: 3.5rem;
+}
 
+.rating-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding-top: 30px;
+}
+
+.rating {
+	display: flex;
+	flex-flow: column wrap;
+  align-items: center;
+}
+
+.main {
+	display: flex;
+}
+
+.poster {
+	display: flex;
+	flex-direction: column
+}
+
+.bottom-bar-poster {
+	display: flex;
+	justify-content: space-around;
 }
 
 body {
